@@ -5,27 +5,28 @@
 			<thead>
 				<tr>
 					<th>Select</th>
-					<th>Item</th>
+					<th>Name</th>
+                    <th>Platform</th>
 					<th>Price</th>
 				</tr>
 			</thead>
 			<tbody>
-				<xsl:for-each select="//category">
+				<xsl:for-each select="//genre">
 					<tr>
 						<td colspan="3">
 							<xsl:value-of select="@name" />
 						</td>
 					</tr>
-					<xsl:for-each select="item">
+					<xsl:for-each select="game">
 						<tr id="{position()}">
-							<xsl:attribute name="decaf">
-								<xsl:value-of select="boolean(@decaf)" />
-							</xsl:attribute>
 							<td align="center">
-								<input name="item0" type="checkbox" />
+								<input name="game0" type="checkbox" />
+							</td>
+                            <td>
+								<xsl:value-of select="name" />
 							</td>
 							<td>
-								<xsl:value-of select="listing" />
+								<xsl:value-of select="platforms" />
 							</td>
 							<td align="right">
 								<xsl:value-of select="price" />

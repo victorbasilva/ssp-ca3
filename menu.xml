@@ -1,73 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <menu>
-  <category name="Coffee">
-    <item>
-      <listing>Espresso</listing>
-      <price>3.10</price>
-    </item>
-    <item>
-      <listing>Latte</listing>
-      <price>3.50</price>
-    </item>
-    <item decaf="true">
-      <listing>Americano</listing>
-      <price>3.20</price>
-    </item>
-  </category>
-  <category name="Frappe">
-    <item>
-      <listing>Salted Caramel Frappé</listing>
-      <price>4.50</price>
-    </item>
-    <item>
-      <listing>Pumpkin Spice Frappé</listing>
-      <price>5.00</price>
-    </item>
-    <item decaf="true">
-      <listing>Mint Chocolate Frappé</listing>
-      <price>5.00</price>
-    </item>
-  </category>
-  <category name="Iced Coffee">
-    <item>
-      <listing>Iced Toasted Vanilla</listing>
-      <price>4.00</price>
-    </item>
-    <item>
-      <listing>Iced Shaken Espresso</listing>
-      <price>3.80</price>
-    </item>
-    <item decaf="true">
-      <listing>Iced Flat White</listing>
-      <price>4.10</price>
-    </item>
-  </category>
-  <category name="Tea">
-    <item>
-      <listing>Mint</listing>
-      <price>2.50</price>
-    </item>
-    <item>
-      <listing>Green</listing>
-      <price>2.70</price>
-    </item>
-    <item decaf="true">
-      <listing>Breakfast</listing>
-      <price>2.50</price>
-    </item>
-  </category>
-  <category name="Deserts">
-    <item>
-      <listing>Chocolate Brownie</listing>
-      <price>4.50</price>
-    </item>
-    <item>
-      <listing>Vanila Cheescake</listing>
-      <price>4.50</price>
-    </item>
-    <item>
-      <listing>Carrot Cake</listing>
-      <price>5.00</price>
-    </item>
-  </category>
+  <genre name="FPS">
+    <game>
+      <name>Doom</listing>
+      <platforms>PC, PS4, PS5, XBOX</platforms>
+      <price>49.99</price>
+    </game>
+    <game>
+      <name>Calisto Protocol</listing>
+      <platforms>PC, PS4, PS5, XBOX</platforms>
+      <price>59.99</price>
+    </game>
+    <game>
+      <name>Bioshock Infinite</listing>
+      <platforms>PC, PS4, PS5, XBOX</platforms>
+      <price>49.99</price>
+    </game>
+  </genre>
+  <genre name="RPG">
+   <game>
+      <name>Mass Effect Remake</listing>
+      <platforms>PC, PS4, PS5, XBOX</platforms>
+      <price>69.99</price>
+    </game>
+    <game>
+      <name>Baldurs Gate</listing>
+      <platforms>PC, PS4</platforms>
+      <price>19.99</price>
+    </game>
+    <game>
+      <name>Fallout 4</listing>
+      <platforms>PC, PS4, PS5, XBOX</platforms>
+      <price>29.99</price>
+    </game>
+  </genre>
+  <genre name="MMORPG">
+    <game>
+      <name>World of Warcraft</listing>
+      <platforms>PC</platforms>
+      <price>74.99</price>
+    </game>
+    <game>
+      <name>Guild Wars</listing>
+      <platforms>PC</platforms>
+      <price>19.99</price>
+    </game>
+    <game>
+      <name>Final Fantasy 14</listing>
+      <platforms>PC, PS4, PS5</platforms>
+      <price>29.99</price>
+    </game>
+  </genre>
+  <genre name="Strategy">
+    <game>
+      <name>Europa Universalis 4</listing>
+      <platforms>PC</platforms>
+      <price>19.99</price>
+    </game>
+    <game>
+      <name>Civilisation 6</listing>
+      <platforms>PC, PS4, XBOX</platforms>
+      <price>59.99</price>
+    </game>
+    <game>
+      <name>Company of Heroes 3</listing>
+      <platforms>PC</platforms>
+      <price>69.99</price>
+    </game>
+  </genre>
+  <genre name="Adventure">
+    <game>
+      <name>Rise of Tomb Rider</listing>
+      <platforms>PC, PS4, PS5, XBOX</platforms>
+      <price>29.99</price>
+    </game>
+    <game>
+      <name>Elden Ring</listing>
+      <platforms>PC, PS4, PS5, XBOX</platforms>
+      <price>59.99</price>
+    </game>
+    <game>
+      <name>Assassins Creed</listing>
+      <platforms>PC, PS4, PS5, XBOX</platforms>
+      <price>69.99</price>
+    </game>
+  </genre>
 </menu>
