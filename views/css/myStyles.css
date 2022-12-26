@@ -1,0 +1,60 @@
+body{
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+input.form-control, .form-select{
+    background-color: #4b5258;
+    color: white;
+    border: 1px solid #212529;
+}
+
+input.form-control:focus, .form-select:focus {
+    color: #ffffff;
+    background-color: #4b5258;
+    border-color: #ffc107;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(255 193 7 / 25%);
+}
+
+#menu{
+    padding: 64px 32px;
+    background-color: #212529;
+    border-radius: 8px;
+}
+
+.lead-container{
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+
+.lead-button{
+    background-color: #121212;
+    color:#f5f5f5;
+    padding: 24px;
+    border-color: #ffe188;
+}
+
+.lead-button:hover{
+    background-color: #ffe188;
+    color:#121212;
+}
+
+h1, h2, h3, h4{
+    color: #ffe188; 
+}
+
+
+.featured-game-img {
+    max-height: 450px;
+    width: auto;
+}
+
+.featured-game-container-details{
+    align-self: center;
+}
+
+.cpy{
+    color: #919da5;
+    margin-right: 5px;
+}

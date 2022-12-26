@@ -5,22 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Bare - Start Bootstrap Template</title>
+        <title>GameStore</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- My styles -->
+        <link href="css/myStyles.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">GameStore</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#featuredContainer">Featured</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -36,15 +38,106 @@
         </nav>
         <!-- Page content-->
         <div class="container">
-            <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.1.3</p>
+            <div class="text-center lead-container">
+                <h1 class="mb-3">Welcome to our game store</h1>
+                <p class="lead mb-4">Select games from menu below</p>
+                <a type="button" class="btn btn-warning lead-button" href="#menu">Games Menu</a>
+            </div>
+
+            <div class="row" id="featuredContainer">
+                <h2 class="featured-games-title mb-4">Featured Games</h2>
+                <!-- Main featured game -->
+                <div class="row featured-game-container mb-5">
+                    <img src="./assets/wow.jpg" class="featured-game-img col-6"/>
+                    <div class="col-6 featured-game-container-details">
+                        <h3 class="featured-subtitle mb-5">World Of Warcraft</h3>
+                        <p class="featured-text mb-5">
+                            Hop on your Dragon Isles Drake and soar towards the epic challenges of Dragonflight Season 1, including an all-new eight boss raid, a dungeon rotation featuring new surprises and old favorites, high-stakes PvP combat, and more
+                        </p>
+                        <p class="featured-dev"><span class="cpy dev">Developer:</span> <span class="dev-text">Blizzard Entertainment Inc.</span></p>
+                        <p class="featured-pub"><span class="cpy pub">Publisher:</span> <span class="dev-text">Blizzard Entertainment Inc.</span></p>
+                    </div>
+                </div>    
+                <!-- Each featured game -->
+                <div class="col-sm-6 mb-5">
+                    <img src="./assets/elden-ring.jpg" width="100%" height="auto" class="featured-img"/>
+                    <h4 class="featured-subtitle mb-4 mt-3">Elden Ring</h4>
+                    <p class="featured-text mb-5">
+                        THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to 
+                        brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.
+                    </p>
+                    <p class="featured-dev"><span class="cpy dev">Developer:</span> <span class="dev-text">FromSoftware Inc.</span></p>
+                    <p class="featured-pub"><span class="cpy pub">Publisher:</span> <span class="dev-text">Bandai Namco Entertainment</span></p>
+                </div>
+
+                <!-- Each featured game -->
+                <div class="col-sm-6">
+                    <img src="./assets/civ.jpg" width="100%" height="auto" class="featured-img"/>
+                    <h4 class="featured-subtitle mb-4 mt-3">Civilization 6</h4>
+                    <p class="featured-text mb-5">
+                        Civilization VI is the newest installment in the award winning Civilization Franchise. Expand your empire, advance your culture and go head-to-head against history’s greatest leaders. Will your civilization stand the test of time?
+                    </p>
+                    <p class="featured-dev"><span class="cpy dev">Developer:</span> <span class="dev-text">Firaxis Games</span></p>
+                    <p class="featured-pub"><span class="cpy pub">Publisher:</span> <span class="dev-text">2K Games</span></p>
+                </div>
+                
+                <!-- Each featured game -->
+                <div class="col-sm-6">
+                    <img src="./assets/doom.jpg" width="100%" height="auto" class="featured-img"/>
+                    <h4 class="featured-subtitle mb-4 mt-3">Doom Eternal</h4>
+                    <p class="featured-text mb-5">
+                        Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.
+                    </p>
+                    <p class="featured-dev"><span class="cpy dev">Developer:</span> <span class="dev-text">id Software</span></p>
+                    <p class="featured-pub"><span class="cpy pub">Publisher:</span> <span class="dev-text">Bethesda Softworks</span></p>
+                </div>
+
+                <!-- Each featured game -->
+                <div class="col-sm-6">
+                    <img src="./assets/mass.jpg" width="100%" height="auto" class="featured-img"/>
+                    <h4 class="featured-subtitle mb-4 mt-3">The Mass Effect™ Legendary Edition</h4>
+                    <p class="featured-text mb-5">
+                        The Mass Effect™ Legendary Edition includes single-player base content and over 40 DLC from the highly acclaimed Mass Effect, Mass Effect 2, and Mass Effect 3 games, including promo weapons, armors, and packs — remastered and optimized for 4K Ultra HD.
+                    </p>
+                    <p class="featured-dev"><span class="cpy dev">Developer:</span> <span class="dev-text">Bioware Entertainment</span></p>
+                    <p class="featured-pub"><span class="cpy pub">Publisher:</span> <span class="dev-text">Electronic Arts</span></p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div id="menu" class="col-lg-4 mb-5 order-2">
+                    <form enctype="application/json" action="/post/json" method="post">
+                        <div class="form-group">
+                            <select class="form-select" name="sec_n">
+                                <option value="0">FPS</option>
+                                <option value="1">RPG</option>
+                                <option value="2">MMORPG</option>
+                                <option value="3">Strategy</option>
+                                <option value="4">Adventure</option>
+                            </select>
+                            <input class="form-control mt-3" type="text" name="name" placeholder="Game name">
+                            <input class="form-control mt-3" type="text" name="platforms" placeholder="Platforms">
+                            <input class="form-control mt-3" type="text" name="price" placeholder="Price">
+                            <div class="d-grid gap-2 mt-3">
+                                <button type="submit" class="btn btn-warning btn-block">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-grid gap-2">
+                        <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button>
+                    </div>
+                </div>
+                <div id="results" class="col-lg-8 mb-5 order-1"></div>
             </div>
         </div>
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Table JS-->
+        <script src="js/content.js"></script>
     </body>
 </html>

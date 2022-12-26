@@ -2,7 +2,7 @@
 <menu>
   <genre name="FPS">
     <game>
-      <name>Doom</listing>
+      <name>Doom Eternal</listing>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>49.99</price>
     </game>
@@ -19,7 +19,7 @@
   </genre>
   <genre name="RPG">
    <game>
-      <name>Mass Effect Remake</listing>
+      <name>The Mass Effect Legendary Edition</listing>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>69.99</price>
     </game>
