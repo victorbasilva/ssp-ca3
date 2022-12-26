@@ -45,11 +45,15 @@ router.get('/get/html', function(req, res) {
 
 router.post('/post/json', function(req, res){
     function appendJSON(obj){
-        console.log(obj);
         XMLtoJSON('menu.xml', function(err, result) {
             if (err) throw (err);
-            result.menu.category[obj.sec_n].item.push({'listing': obj.listing, 'price': obj.price});
-            console.log(JSON.stringify(result, null, " "));
+            if(result && result.menu && result.menu.genre[obj.sec_n]){
+                let name = obj.name.toString();
+                let platforms = obj.platforms.toString();
+                let price = obj.price.toString();
+                result.menu.genre[obj.sec_n].game.push({'name': name, 'platforms': platforms, 'price': price});
+            }
+            
             JSONtoXML('menu.xml', result, function(err){
                 if (err) console.log(err);
             });
@@ -84,3 +88,5 @@ server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() 
     const addr = server.address();
     console.log("Server listening at", addr.address + ":" + addr.port)
 });
+
+

@@ -2,85 +2,90 @@
 <menu>
   <genre name="FPS">
     <game>
-      <name>Doom Eternal</listing>
+      <name>Doom Eternal</name>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>49.99</price>
     </game>
     <game>
-      <name>Calisto Protocol</listing>
+      <name>Calisto Protocol</name>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>59.99</price>
     </game>
     <game>
-      <name>Bioshock Infinite</listing>
+      <name>Bioshock Infinite</name>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>49.99</price>
     </game>
+    <game>
+      <name>asd</name>
+      <platforms>ada</platforms>
+      <price>1.23</price>
+    </game>
   </genre>
   <genre name="RPG">
-   <game>
-      <name>The Mass Effect Legendary Edition</listing>
+    <game>
+      <name>The Mass Effect Legendary Edition</name>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>69.99</price>
     </game>
     <game>
-      <name>Baldurs Gate</listing>
+      <name>Baldurs Gate</name>
       <platforms>PC, PS4</platforms>
       <price>19.99</price>
     </game>
     <game>
-      <name>Fallout 4</listing>
+      <name>Fallout 4</name>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>29.99</price>
     </game>
   </genre>
   <genre name="MMORPG">
     <game>
-      <name>World of Warcraft</listing>
+      <name>World of Warcraft</name>
       <platforms>PC</platforms>
       <price>74.99</price>
     </game>
     <game>
-      <name>Guild Wars</listing>
+      <name>Guild Wars</name>
       <platforms>PC</platforms>
       <price>19.99</price>
     </game>
     <game>
-      <name>Final Fantasy 14</listing>
+      <name>Final Fantasy 14</name>
       <platforms>PC, PS4, PS5</platforms>
       <price>29.99</price>
     </game>
   </genre>
   <genre name="Strategy">
     <game>
-      <name>Europa Universalis 4</listing>
+      <name>Europa Universalis 4</name>
       <platforms>PC</platforms>
       <price>19.99</price>
     </game>
     <game>
-      <name>Civilisation 6</listing>
+      <name>Civilisation 6</name>
       <platforms>PC, PS4, XBOX</platforms>
       <price>59.99</price>
     </game>
     <game>
-      <name>Company of Heroes 3</listing>
+      <name>Company of Heroes 3</name>
       <platforms>PC</platforms>
       <price>69.99</price>
     </game>
   </genre>
   <genre name="Adventure">
     <game>
-      <name>Rise of Tomb Rider</listing>
+      <name>Rise of Tomb Rider</name>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>29.99</price>
     </game>
     <game>
-      <name>Elden Ring</listing>
+      <name>Elden Ring</name>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>59.99</price>
     </game>
     <game>
-      <name>Assassins Creed</listing>
+      <name>Assassins Creed</name>
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>69.99</price>
     </game>
