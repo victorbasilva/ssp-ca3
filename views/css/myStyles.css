@@ -1,6 +1,9 @@
 body{
-    background-color: #121212;
+    background-color: #062832;
     color: #f5f5f5;
+}
+.navbar {
+    background-color:#024752!important;
 }
 
 input.form-control, .form-select{
@@ -29,7 +32,7 @@ input.form-control:focus, .form-select:focus {
 }
 
 .lead-button{
-    background-color: #121212;
+    background-color: #062832;
     color:#f5f5f5;
     padding: 24px;
     border-color: #ffe188;
@@ -41,7 +44,7 @@ input.form-control:focus, .form-select:focus {
 }
 
 h1, h2, h3, h4{
-    color: #ffe188; 
+    color: #ffe188!important; 
 }
 
 
@@ -58,3 +61,10 @@ h1, h2, h3, h4{
     color: #919da5;
     margin-right: 5px;
 }
+
+footer{
+    margin-top: 120px!important;
+    background-color: #121212;
+}
+
+

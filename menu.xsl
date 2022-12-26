@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 	<xsl:template match="/">
-		<table id="menuTable" border="1" class="table table-dark">
+		<table id="menuTable" border="0" class="table table-dark">
 			<thead>
 				<tr>
 					<th>Select</th>
@@ -14,25 +14,25 @@
 				<xsl:for-each select="//genre">
 					<tr>
 						<td colspan="4">
-							<h4 class="px-2 text-warning bg-dark">
+							<h4 class="px-2 bg-dark">
 								<xsl:value-of select="@name" />
 							</h4>
 						</td>
 					</tr>
 					<xsl:for-each select="game">
 						<tr id="{position()}">
-							<td align="center">
+							<td align="center" name="isSelected">
 								<input name="game{position()}" type="checkbox" class="form-check-input" id="game{position()}" data-position="{position()}" data-genre="{../@name}"/>
 							</td>
-                            <td>
+                            <td name="game">
 								<label class="form-check-label" for="game{position()}" role="button">
 									<xsl:value-of select="name" />
 								</label>
 							</td>
-							<td>
+							<td name="platform">
 								<xsl:value-of select="platforms"/>
 							</td>
-							<td align="left">
+							<td align="left" name="price">
 								<xsl:value-of select="price" role="button" />
 							</td>
 						</tr>

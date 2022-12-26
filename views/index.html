@@ -23,15 +23,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#featuredContainer">Featured</a></li>
                         <li class="nav-item"><a class="nav-link" href="#menuSection">Menu</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#copyright">Copyright</a></li>
                     </ul>
                 </div>
             </div>
@@ -149,10 +141,27 @@
                     <div class="d-grid gap-2">
                         <button id="delete" onclick="deleteSelectedRows()" type="button" class="btn btn-danger btn-block mt-3">Delete</button>
                     </div>
+
+                    <div class="row basket mt-5">
+                        <h5 class="mb-3">Basket</h5>
+                        <div class="col-sm-12">
+                            <button id="addToBasket" onclick="addToBasket()" type="button" class="btn btn-success btn-block mt-3">Get total price of selected items</button>
+                        </div>
+                        <div class="col-sm-12 mt-3">
+                            <span class="cpy ">Total price of selected items:</span>
+                            <span class="" id="totalPrice"></span>
+                        </div>
+                    </div>
                 </div>
                 <div id="results" class="col-lg-8 mb-5 order-1"></div>
             </div>
+
+           
         </div>
+        <footer class="page-footer row text-center" id="copyright">
+            <div class="col-sm-12 mt-3"><span class="cpy ">Student Name:</span> <span class="student">Victor Silva</span> </div>
+            <div class="col-sm-12 mt-3 mb-3"><span class="cpy">Student Number:</span> <span class="student">2021259</span> </div>
+        </footer>
         <!-- Jquery -->
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <!-- Bootstrap core JS-->
