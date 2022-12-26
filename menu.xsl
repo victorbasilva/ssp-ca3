@@ -22,17 +22,17 @@
 					<xsl:for-each select="game">
 						<tr id="{position()}">
 							<td align="center">
-								<input name="game0" type="checkbox" class="form-check-input" id="nameCheckBox{position()}"/>
+								<input name="game{position()}" type="checkbox" class="form-check-input" id="game{position()}" data-position="{position()}" data-genre="{../@name}"/>
 							</td>
                             <td>
-								<label class="form-check-label" for="nameCheckBox{position()}" role="button">
+								<label class="form-check-label" for="game{position()}" role="button">
 									<xsl:value-of select="name" />
 								</label>
 							</td>
-							<td for="nameCheckBox{position()}" role="button">
+							<td>
 								<xsl:value-of select="platforms"/>
 							</td>
-							<td align="left" for="nameCheckBox{position()}" role="button">
+							<td align="left">
 								<xsl:value-of select="price" role="button" />
 							</td>
 						</tr>

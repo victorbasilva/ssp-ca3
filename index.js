@@ -6,8 +6,10 @@ const   http = require('http'), //HTTP server
         xsltProcess = require('xslt-processor').xsltProcess, //XSLT handling
         router = express(), //Init our router
         xml2js = require('xml2js'),
+        validator = require('validator'), // validation module // Reference: https://www.geeksforgeeks.org/how-to-validate-data-using-validator-module-in-node-js/
         server = http.createServer(router); //Init our server
         
+
         router.use(express.static(path.resolve(__dirname,'views')));
         router.use(express.urlencoded({extended: true}));
         router.use(express.json());
@@ -45,6 +47,11 @@ router.get('/get/html', function(req, res) {
 
 router.post('/post/json', function(req, res){
     function appendJSON(obj){
+        // if data is not valid 
+        if(!isDataValid(obj)){
+            // throw error
+            throw 'invalid data';
+        }
         XMLtoJSON('menu.xml', function(err, result) {
             if (err) throw (err);
             if(result && result.menu && result.menu.genre[obj.sec_n]){
@@ -65,14 +72,72 @@ router.post('/post/json', function(req, res){
     res.redirect('back');
 });
 
+/**
+ * Method to validate data using validator
+ * Reference: https://www.geeksforgeeks.org/how-to-validate-data-using-validator-module-in-node-js/
+ * @param {*} obj 
+ * @returns 
+ */
+var isDataValid = function isDataValid(obj){
+    if(!obj){
+        return false;
+    }
+    // check if name is present
+    if(validator.isEmpty(obj.name)){
+        return false;
+    }
+    // check if name is present
+    if(validator.isEmpty(obj.platforms)){
+        return false;
+    }
+    // price need to be present and number
+    if(validator.isEmpty(obj.price) && !isNaN(obj.price)){
+        return false;
+    }
+    return true;
+}
+
+var isDeleteDataValid = function isDeleteDataValid(obj){
+    if(!obj || !obj.data || obj.data.length === 0){
+        return false;
+    }
+    for(i=0; i< obj.data.length; i++){
+        let el = obj.data[i];
+        // check if genre is present
+        if(validator.isEmpty(el.genre)){
+            return false;
+        }
+        // check if entree is present
+        if(validator.isEmpty(el.entree)){
+            return false;
+        }
+    }
+    return true;
+}
+
+/**
+ * Delete items from menu
+ */
 router.post('/post/delete', function (req,res) {
     function deleteJSON(obj) {
-        console.log(obj);
+        if(!isDeleteDataValid(obj)){
+            // throw error
+            throw 'invalid data';
+        }
         XMLtoJSON('menu.xml', function(err, result){
             if (err) throw (err);
 
-            delete result.menu.category[obj.section].item[obj.entree];
-
+            for(i=0; i < result.menu.genre.length; i++){
+                for(j=0; j<obj.data.length; j++){
+                    // if we find matching genre
+                    if(result.menu.genre[i]['$'].name === obj.data[j].genre){
+                        // remove item 
+                        delete result.menu.genre[i].game[obj.data[j].entree]
+                    }
+                }
+                
+            }
+           // delete result.menu.genre[obj.section].game[obj.entree];
             JSONtoXML('menu.xml', result, function(err){
                 if (err) console.log(err);
             });

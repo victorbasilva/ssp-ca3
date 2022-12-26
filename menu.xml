@@ -16,11 +16,6 @@
       <platforms>PC, PS4, PS5, XBOX</platforms>
       <price>49.99</price>
     </game>
-    <game>
-      <name>asd</name>
-      <platforms>ada</platforms>
-      <price>1.23</price>
-    </game>
   </genre>
   <genre name="RPG">
     <game>
