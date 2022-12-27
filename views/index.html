@@ -12,12 +12,16 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- My styles -->
         <link href="css/myStyles.css" rel="stylesheet" />
+        <!-- Material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">GameStore</a>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container-fluid text-center">
+                <a class="navbar-brand position-relative" href="#">
+                    <span class="material-icons brand-icon ">sports_esports</span><span class="brand-text position-absolute">GameStore</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -28,21 +32,28 @@
                 </div>
             </div>
         </nav>
-        <!-- Page content-->
-        <div class="container">
+
+        <!-- Special content -->
+        <div class="container-fluid special-container">
             <div class="text-center lead-container">
-                <h1 class="mb-3">Welcome to our game store</h1>
-                <p class="lead mb-4">Select games from menu below</p>
-                <a type="button" class="btn btn-warning lead-button" href="#menuSection">Games Menu</a>
+                <img class="lead-bg" src="/assets/background-image.jpg">
+                <div class="lead-content">
+                    <h1 class="mb-3">Welcome to our game store</h1>
+                    <p class="lead mb-4">Select games from menu below</p>
+                    <a type="button" class="btn btn-warning lead-button" href="#menuSection">Games Menu</a>
+                </div>
             </div>
-            
+        </div>
+        
+        <!-- Page content-->
+        <div class="container main-content">
+            <!-- Featured games content-->
             <div class="row mb-5" id="featuredContainer">
                 <h2 class="featured-games-title mb-4">Featured Games</h2>
                 <!-- Get featured games from server-->
                 <div class="row" id="features-id"></div>    
             </div>
-
-
+            <!-- Store content -->
             <div class="row" id="menuSection">
                 <h2 class="mb-3">Game Menu</h2>
                 <p class="lead mb-4">Select games from menu below</p>
