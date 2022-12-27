@@ -45,6 +45,22 @@ router.get('/get/html', function(req, res) {
     res.end(html.toString());
 });
 
+router.get('/get/features', function(req, res) {
+
+    res.writeHead(200, {'Content-Type' : 'text/html'});
+
+    let xml = fs.readFileSync('feature.xml', 'utf8'),
+        xsl = fs.readFileSync('feature.xsl', 'utf8');
+
+    xml = xmlParse(xml);
+    xsl = xmlParse(xsl);
+
+    let html = xsltProcess(xml, xsl);
+
+    res.end(html.toString());
+});
+
+
 router.post('/post/json', function(req, res){
     function appendJSON(obj){
         // if data is not valid 

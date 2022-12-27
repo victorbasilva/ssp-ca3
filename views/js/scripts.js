@@ -29,6 +29,25 @@ function draw_table(){
     $.getJSONuncached("/get/html")
 };
 
+const getFeatures =  function getFeatures(){
+    $("#features-id").empty(); // Empty div with id features-id
+    // ajax get request function
+    $.getJSONuncached = function(url){
+        return $.ajax(
+        {
+            url: url,
+            type: 'GET',
+            cache: false,
+            success: function(html){
+                // on success append result to div with id results
+                $("#features-id").append(html);
+            }
+        });
+    };
+    // Make get request to url /get/features
+    $.getJSONuncached("/get/features")
+}
+
 /**
  * Find all selected rows (that have checkbox selected) and
  * make delete request to delete all selected
@@ -92,4 +111,5 @@ const calcTotal = function calcTotal(items){
  */
 $(document).ready(function(){
     draw_table();
+    getFeatures();
 });

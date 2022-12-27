@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<featured>
+    <item name="main">
+        <img>./assets/wow.jpg</img>
+        <title>World Of Warcraft</title>
+        <text>Hop on your Dragon Isles Drake and soar towards the epic challenges of Dragonflight Season 1, including an all-new eight boss raid, a dungeon rotation featuring new surprises and old favorites, high-stakes PvP combat, and more</text>
+        <developer>Blizzard Entertainment Inc.</developer>
+        <publisher>Blizzard Entertainment Inc.</publisher>
+    </item> 
+    <item name="featured">
+        <img>./assets/elden-ring.jpg</img>
+        <title>Elden Ring</title>
+        <text>THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to 
+            brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.</text>
+        <developer>FromSoftware Inc.</developer>
+        <publisher>Bandai Namco Entertainment</publisher>
+    </item> 
+    <item name="featured">
+        <img>./assets/civ.jpg</img>
+        <title>Civilization 6</title>
+        <text>Civilization VI is the newest installment in the award winning Civilization Franchise. Expand your empire, advance your culture and go head-to-head against history greatest leaders. Will your civilization stand the test of time?</text>
+        <developer>Firaxis Games</developer>
+        <publisher>2K Games</publisher>
+    </item>
+    <item name="featured">
+        <img>./assets/doom.jpg</img>
+        <title>Doom Eternal</title>
+        <text>Hell armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.</text>
+        <developer>id Software</developer>
+        <publisher>Bethesda Softworks</publisher>
+    </item>
+    <item name="featured"> 
+        <img>./assets/mass.jpg</img>
+        <title>The Mass Effect Legendary Edition</title>
+        <text>The Mass Effect Legendary Edition includes single-player base content and over 40 DLC from the highly acclaimed Mass Effect, Mass Effect 2, and Mass Effect 3 games, including promo weapons, armors, and packs — remastered and optimized for 4K Ultra HD.</text>
+        <developer>Bioware Entertainment</developer>
+        <publisher>Electronic Arts</publisher>
+    </item>
+</featured>
+
