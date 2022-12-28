@@ -7,6 +7,15 @@
 // Use this file to add JavaScript to your project
 
 /**
+ * When document is ready call function draw_table
+ * jQuery method ready used.
+ */
+$(document).ready(function(){
+    draw_table();
+    getFeatures();
+});
+
+/**
  * Empty div with id results if there is some content inside
  * Get data from request  /get/html and append it to div with id results
  */
@@ -104,12 +113,3 @@ const calcTotal = function calcTotal(items){
     $("#totalPrice").empty();
     $("#totalPrice").append(total.toFixed(2));
 }
-
-/**
- * When document is ready call function draw_table
- * jQuery method ready used.
- */
-$(document).ready(function(){
-    draw_table();
-    getFeatures();
-});
